@@ -1,10 +1,14 @@
 package com.nanemo.barbershop.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "addresses")
 public class Address {
     @Id
@@ -14,4 +18,5 @@ public class Address {
 
     @OneToOne(mappedBy = "barberShopAddress")
     private BarberShop barberShop;
+
 }

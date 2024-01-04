@@ -2,6 +2,7 @@ package com.nanemo.barbershop.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Value;
 
 @Data
 @Entity
