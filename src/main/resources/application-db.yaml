@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    url: &connectionUrl jdbc:postgresql://${DB_CONNECTION_IP:localhost}:${DB_CONNECTION_PORT:5432}/barbershop_db?
+    createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=
+    false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&
+    serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8
+    username: &username ${DB_CONNECTION_USERNAME:root}
+    password: &password ${DB_CONNECTION_PASSWORD:12345}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+

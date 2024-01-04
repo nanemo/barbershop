@@ -24,8 +24,6 @@ public class BarberShop {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "barberShop")
     private Set<HairDresser> hairDressers;
 
-    private String coverPictureUrl;
-
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "barberShop")
     private Set<Picture> picturesUrl;
 
