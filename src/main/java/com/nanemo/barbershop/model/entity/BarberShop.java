@@ -27,4 +27,10 @@ public class BarberShop {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "barberShop")
     private Set<Picture> picturesUrl;
 
+    private Double latitude;
+
+    private Double longitude;
+
+    private Double radiusInKm;
+
 }

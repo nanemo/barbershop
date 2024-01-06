@@ -10,7 +10,7 @@ spring:
     password: &password ${DB_CONNECTION_PASSWORD:12345}
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     database: postgresql
     open-in-view: false
     database-platform: org.hibernate.dialect.PostgreSQLDialect

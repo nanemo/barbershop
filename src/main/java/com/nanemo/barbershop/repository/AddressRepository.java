@@ -13,10 +13,5 @@ import java.util.Set;
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Long> {
 
-    List<Address> findByAddressIdInOrderByAddressIdDescBarberShopAsc(@Param("addressId") Set<Long> addressId);
 
-    void findByAddressIdInOffsetAndLimit(Set<Long> longs, int i, int i1);
-
-
-    List<Address> findByAddressIdInOffsetAndLimit(Set<Long> addressId, Pageable pageable);
 }
