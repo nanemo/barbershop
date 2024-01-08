@@ -16,8 +16,8 @@ public class BarberShopDto {
     private Long barberShopId;
     private String barberShopName;
     private Address barberShopAddress;
-    private Set<HairDresser> hairDressers;
-    private Set<Picture> picturesUrl;
+    private Set<Long> hairDressersId;
+    private Set<Long> picturesUrlId;
     private Double latitude;
     private Double longitude;
     private Double radiusInKm;

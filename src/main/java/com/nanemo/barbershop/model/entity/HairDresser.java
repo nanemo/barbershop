@@ -15,6 +15,4 @@ public class HairDresser {
     @ManyToOne
     @JoinColumn(name = "barber_shop_id")
     private BarberShop barberShop;
-
-
 }
